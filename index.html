@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Munther Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Al Munther Satellite Quiz</h1>
+        
+        <!-- Language Selection -->
+        <div id="language-selection">
+            <button onclick="setLanguage('english')">English</button>
+            <button onclick="setLanguage('arabic')">العربية</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz" style="display: none;">
+            <p id="question"></p>
+            <div id="answer-buttons"></div>
+            <p id="feedback"></p>
+            <button id="next-button" onclick="nextQuestion()" style="display: none;">Next</button>
+        </div>
+
+        <p id="score" style="display: none;">Score: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
